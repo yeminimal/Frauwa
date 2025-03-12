@@ -8,10 +8,26 @@
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed !important; /* Force fixed positioning */
+  width: 100% !important;
+  margin-top: 5px !important;
+  animation: none !important; /* Disable animations that might cause positioning issues */
+  transform: none !important; /* Ensure no transform is applied */
+}
+
+/* Make sure dropdown items are clearly visible and selectable */
+.radix-select-content .radix-select-item {
+  padding: 10px !important;
+  cursor: pointer !important;
 }
 
 /* Ensure the parent container doesn't restrict the dropdown */
 .form-container {
   position: relative;
   z-index: 50;
+}
+
+/* Prevent body scrolling when dropdown is open */
+body.dropdown-open {
+  overflow: hidden;
 }

@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -27,6 +27,32 @@ const ContactFormFields = ({
   handleSelectChange,
   handleSubmit
 }: ContactFormFieldsProps) => {
+  
+  // Handle body scroll lock when dropdown is open
+  useEffect(() => {
+    const handleSelectOpen = (event: CustomEvent) => {
+      // Add class to body when select is opened
+      document.body.classList.add('dropdown-open');
+    };
+    
+    const handleSelectClose = (event: CustomEvent) => {
+      // Remove class from body when select is closed
+      document.body.classList.remove('dropdown-open');
+    };
+    
+    // Add event listeners for select open/close events
+    document.addEventListener('selectOpen', handleSelectOpen as EventListener);
+    document.addEventListener('selectClose', handleSelectClose as EventListener);
+    
+    return () => {
+      // Clean up event listeners
+      document.removeEventListener('selectOpen', handleSelectOpen as EventListener);
+      document.removeEventListener('selectClose', handleSelectClose as EventListener);
+      // Ensure body class is removed when component unmounts
+      document.body.classList.remove('dropdown-open');
+    };
+  }, []);
+  
   return (
     <form 
       id="cleaningForm" 
@@ -86,15 +112,24 @@ const ContactFormFields = ({
         <Select
           value={formData.service}
           onValueChange={handleSelectChange}
+          onOpenChange={(open) => {
+            // Dispatch custom events when select opens/closes
+            if (open) {
+              document.dispatchEvent(new CustomEvent('selectOpen'));
+            } else {
+              document.dispatchEvent(new CustomEvent('selectClose'));
+            }
+          }}
         >
           <SelectTrigger id="service" className="w-full">
             <SelectValue placeholder="Select a service" />
           </SelectTrigger>
           <SelectContent 
-            className="bg-white border border-gray-200 shadow-lg max-h-[300px] overflow-y-auto z-50"
-            position="item-aligned"
+            className="radix-select-content"
+            position="popper"
             sideOffset={5}
             align="start"
+            avoidCollisions={false}
           >
             <SelectItem value="general">General Cleaning Services</SelectItem>
             <SelectItem value="facility">Facility Management</SelectItem>
