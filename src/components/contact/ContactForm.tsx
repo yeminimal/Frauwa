@@ -4,6 +4,7 @@ import { useContactForm } from '@/hooks/useContactForm';
 import FormSuccessMessage from './FormSuccessMessage';
 import ContactFormFields from './ContactFormFields';
 import { handleFormSubmit } from '@/utils/formSubmission';
+import './contact-form.css';
 
 const ContactForm = () => {
   const {
@@ -30,7 +31,7 @@ const ContactForm = () => {
   };
   
   return (
-    <div className="bg-white rounded-2xl shadow-card p-6 md:p-8">
+    <div className="bg-white rounded-2xl shadow-card p-6 md:p-8 form-container">
       {isSubmitted ? (
         <FormSuccessMessage />
       ) : (

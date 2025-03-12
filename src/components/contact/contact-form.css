@@ -1,0 +1,17 @@
+
+/* Fix for select dropdown positioning and visibility */
+.radix-select-content {
+  max-height: 300px;
+  overflow-y: auto !important;
+  z-index: 9999 !important;
+  background-color: white !important;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the parent container doesn't restrict the dropdown */
+.form-container {
+  position: relative;
+  z-index: 50;
+}

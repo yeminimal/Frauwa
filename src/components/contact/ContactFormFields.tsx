@@ -90,7 +90,12 @@ const ContactFormFields = ({
           <SelectTrigger id="service" className="w-full">
             <SelectValue placeholder="Select a service" />
           </SelectTrigger>
-          <SelectContent position="popper" className="max-h-[300px] overflow-y-auto z-50">
+          <SelectContent 
+            className="bg-white border border-gray-200 shadow-lg max-h-[300px] overflow-y-auto z-50"
+            position="item-aligned"
+            sideOffset={5}
+            align="start"
+          >
             <SelectItem value="general">General Cleaning Services</SelectItem>
             <SelectItem value="facility">Facility Management</SelectItem>
             <SelectItem value="moveInOut">Move In/Move Out Services</SelectItem>
