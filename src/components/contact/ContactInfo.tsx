@@ -6,25 +6,25 @@ import ContactInfoItem from './ContactInfoItem';
 const ContactInfo = () => {
   const contactInfo = [
     {
-      icon: <Phone size={18} className="text-brand-primary" />,
+      icon: <Phone size={18} className="text-frauwa-800" />,
       title: "WhatsApp",
-      content: "+234 802 505 8426",
-      link: "https://wa.me/+2348025058426"
+      content: "+234 708 333 0386",
+      link: "https://wa.me/+2347083330386"
     },
     {
-      icon: <Phone size={18} className="text-brand-primary" />,
-      title: "WhatsApp",
-      content: "+234 803 722 6269",
-      link: "https://wa.me/+2348037226269"
+      icon: <Phone size={18} className="text-frauwa-800" />,
+      title: "Call Us",
+      content: "+234 708 333 0386",
+      link: "tel:+2347083330386"
     },
     {
-      icon: <Mail size={18} className="text-brand-primary" />,
+      icon: <Mail size={18} className="text-frauwa-800" />,
       title: "Email",
-      content: "tutchoncecleaningservices@gmail.com",
-      link: "mailto:tutchoncecleaningservices@gmail.com"
+      content: "francolee66@yahoo.com",
+      link: "mailto:francolee66@yahoo.com"
     },
     {
-      icon: <MapPin size={18} className="text-brand-primary" />,
+      icon: <MapPin size={18} className="text-frauwa-800" />,
       title: "Service Area",
       content: "We deliver anywhere within Nigeria"
     }

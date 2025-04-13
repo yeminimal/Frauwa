@@ -68,22 +68,24 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					'primary': '#228977',
-					'secondary': '#21665a',
-					'light': '#f8fffe',
+					'primary': '#0D4D33',
+					'secondary': '#105939',
+					'light': '#F4F7F2',
+					'cream': '#F9F8F0',
+					'beige': '#D6C9A0',
+					'accent': '#88A176',
 				},
-				clean: {
-					'50': '#f8fafc',
-					'100': '#f0f5fa',
-					'200': '#e3edf7',
-					'300': '#c9ddf0',
-					'400': '#a4c4e3',
-					'500': '#75a6d7',
-					'600': '#5c8ec8',
-					'700': '#4b78b8',
-					'800': '#3f6396',
-					'900': '#365480',
-					'950': '#243450',
+				frauwa: {
+					'50': '#F4F7F2',
+					'100': '#E8EFE4',
+					'200': '#D1DFCA',
+					'300': '#A6C195',
+					'400': '#88A176',
+					'500': '#5C7A4D',
+					'600': '#456339',
+					'700': '#344B2B',
+					'800': '#0D4D33',
+					'900': '#105939',
 				},
 			},
 			borderRadius: {
@@ -93,7 +95,11 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
-				display: ['SF Pro Display', 'Inter', 'sans-serif'],
+				display: ['Two Seasons', 'serif'],
+			},
+			letterSpacing: {
+				'tightest': '-0.036em', // -36
+				'tighter': '-0.063em', // -63
 			},
 			keyframes: {
 				'accordion-down': {
@@ -120,6 +126,10 @@ export default {
 					'0%': { transform: 'translateY(0px)' },
 					'50%': { transform: 'translateY(-10px)' },
 					'100%': { transform: 'translateY(0px)' }
+				},
+				'parallax': {
+					'0%': { transform: 'translateY(0)' },
+					'100%': { transform: 'translateY(-5%)' }
 				}
 			},
 			animation: {
@@ -128,7 +138,8 @@ export default {
 				'fade-in': 'fade-in 0.7s ease-out',
 				'fade-up': 'fade-up 0.7s ease-out',
 				'scale-in': 'scale-in 0.5s ease-out',
-				'float': 'float 6s ease-in-out infinite'
+				'float': 'float 6s ease-in-out infinite',
+				'parallax': 'parallax 1.5s ease-out'
 			},
 			transitionTimingFunction: {
 				'spring': 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',

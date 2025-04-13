@@ -15,11 +15,18 @@ export const useContactForm = () => {
     email: '',
     phone: '',
     service: '',
-    message: '',
+    message: ''
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  
+  const updateField = (name: string, value: string) => {
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
   
   const resetForm = () => {
     setFormData({
@@ -27,23 +34,18 @@ export const useContactForm = () => {
       email: '',
       phone: '',
       service: '',
-      message: '',
+      message: ''
     });
     setIsSubmitted(false);
-  };
-  
-  const updateField = (name: string, value: string) => {
-    setFormData(prev => ({ ...prev, [name]: value }));
   };
   
   return {
     formData,
     isSubmitting,
     isSubmitted,
-    setFormData,
     setIsSubmitting,
     setIsSubmitted,
-    resetForm,
     updateField,
+    resetForm
   };
 };

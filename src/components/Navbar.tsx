@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Menu, X, CalendarCheck } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,43 +61,41 @@ const Navbar = () => {
       <div className="container max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="font-display text-2xl font-semibold text-foreground transition-colors">
-            Tutch<span className="text-brand-primary">once</span>
-          </Link>
+          <Logo variant={!isScrolled && location.pathname === '/' ? 'white' : 'default'} />
           
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center space-x-8">
             <a 
-              href="#services" 
-              onClick={(e) => handleNavigation(e, 'services')}
-              className="text-foreground/80 hover:text-brand-primary transition-colors font-medium text-sm hover:scale-105 duration-200"
+              href="#roofing" 
+              onClick={(e) => handleNavigation(e, 'roofing')}
+              className={`${!isScrolled && location.pathname === '/' ? 'text-white/80 hover:text-white' : 'text-frauwa-800/80 hover:text-frauwa-800'} transition-colors font-medium text-sm hover:scale-105 duration-200`}
             >
-              Services
+              Roofing
             </a>
             <a 
-              href="#how-it-works" 
-              onClick={(e) => handleNavigation(e, 'how-it-works')}
-              className="text-foreground/80 hover:text-brand-primary transition-colors font-medium text-sm hover:scale-105 duration-200"
+              href="#interior" 
+              onClick={(e) => handleNavigation(e, 'interior')}
+              className={`${!isScrolled && location.pathname === '/' ? 'text-white/80 hover:text-white' : 'text-frauwa-800/80 hover:text-frauwa-800'} transition-colors font-medium text-sm hover:scale-105 duration-200`}
             >
-              How It Works
+              Interior
             </a>
             <a 
-              href="#testimonials" 
-              onClick={(e) => handleNavigation(e, 'testimonials')}
-              className="text-foreground/80 hover:text-brand-primary transition-colors font-medium text-sm hover:scale-105 duration-200"
+              href="#exterior" 
+              onClick={(e) => handleNavigation(e, 'exterior')}
+              className={`${!isScrolled && location.pathname === '/' ? 'text-white/80 hover:text-white' : 'text-frauwa-800/80 hover:text-frauwa-800'} transition-colors font-medium text-sm hover:scale-105 duration-200`}
             >
-              Testimonials
+              Exterior
             </a>
-            <Link to="/blog" className="text-foreground/80 hover:text-brand-primary transition-colors font-medium text-sm hover:scale-105 duration-200">
-              Blog
-            </Link>
-            <Link to="/careers" className="text-foreground/80 hover:text-brand-primary transition-colors font-medium text-sm hover:scale-105 duration-200">
-              Careers
+            <Link 
+              to="/projects" 
+              className={`${!isScrolled && location.pathname === '/' ? 'text-white/80 hover:text-white' : 'text-frauwa-800/80 hover:text-frauwa-800'} transition-colors font-medium text-sm hover:scale-105 duration-200`}
+            >
+              Projects
             </Link>
             <a 
               href="#contact" 
               onClick={(e) => handleNavigation(e, 'contact')}
-              className="text-foreground/80 hover:text-brand-primary transition-colors font-medium text-sm hover:scale-105 duration-200"
+              className={`${!isScrolled && location.pathname === '/' ? 'text-white/80 hover:text-white' : 'text-frauwa-800/80 hover:text-frauwa-800'} transition-colors font-medium text-sm hover:scale-105 duration-200`}
             >
               Contact
             </a>
@@ -105,19 +104,19 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button 
-              variant="default" 
-              className="bg-brand-primary hover:bg-brand-secondary text-white rounded-full px-6 button-hover-effect group"
+              variant={!isScrolled && location.pathname === '/' ? "outline" : "default"} 
+              className={`${!isScrolled && location.pathname === '/' ? 'bg-white text-frauwa-800 border-white hover:bg-white/90' : 'bg-frauwa-800 hover:bg-frauwa-900 text-white'} rounded-full px-6 button-hover-effect group`}
               onClick={scrollToContact}
             >
-              <CalendarCheck className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-              Book Now
+              <Phone className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+              Contact Us
             </Button>
           </div>
           
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-foreground p-2 hover:bg-brand-light rounded-full transition-colors"
+            className={`md:hidden p-2 ${!isScrolled && location.pathname === '/' ? 'text-white hover:bg-white/10' : 'text-frauwa-800 hover:bg-frauwa-100'} rounded-full transition-colors`}
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -131,7 +130,7 @@ const Navbar = () => {
           {/* Close button at the top */}
           <button 
             onClick={() => setIsMobileMenuOpen(false)}
-            className="absolute top-4 right-4 p-2 text-foreground hover:bg-brand-light rounded-full transition-colors"
+            className="absolute top-4 right-4 p-2 text-foreground hover:bg-frauwa-100 rounded-full transition-colors"
             aria-label="Close menu"
           >
             <X size={24} />
@@ -139,44 +138,37 @@ const Navbar = () => {
           
           <nav className="flex flex-col space-y-6 mt-8">
             <a 
-              href="#services" 
-              onClick={(e) => handleNavigation(e, 'services')}
-              className="text-foreground font-medium text-lg transition-colors hover:text-brand-primary"
+              href="#roofing" 
+              onClick={(e) => handleNavigation(e, 'roofing')}
+              className="text-frauwa-800 font-medium text-lg transition-colors hover:text-frauwa-600"
             >
-              Services
+              Roofing
             </a>
             <a 
-              href="#how-it-works" 
-              onClick={(e) => handleNavigation(e, 'how-it-works')}
-              className="text-foreground font-medium text-lg transition-colors hover:text-brand-primary"
+              href="#interior" 
+              onClick={(e) => handleNavigation(e, 'interior')}
+              className="text-frauwa-800 font-medium text-lg transition-colors hover:text-frauwa-600"
             >
-              How It Works
+              Interior
             </a>
             <a 
-              href="#testimonials" 
-              onClick={(e) => handleNavigation(e, 'testimonials')}
-              className="text-foreground font-medium text-lg transition-colors hover:text-brand-primary"
+              href="#exterior" 
+              onClick={(e) => handleNavigation(e, 'exterior')}
+              className="text-frauwa-800 font-medium text-lg transition-colors hover:text-frauwa-600"
             >
-              Testimonials
+              Exterior
             </a>
             <Link 
-              to="/blog" 
-              className="text-foreground font-medium text-lg transition-colors hover:text-brand-primary"
+              to="/projects" 
+              className="text-frauwa-800 font-medium text-lg transition-colors hover:text-frauwa-600"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Blog
-            </Link>
-            <Link 
-              to="/careers" 
-              className="text-foreground font-medium text-lg transition-colors hover:text-brand-primary"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Careers
+              Projects
             </Link>
             <a 
               href="#contact" 
               onClick={(e) => handleNavigation(e, 'contact')}
-              className="text-foreground font-medium text-lg transition-colors hover:text-brand-primary"
+              className="text-frauwa-800 font-medium text-lg transition-colors hover:text-frauwa-600"
             >
               Contact
             </a>
@@ -184,11 +176,11 @@ const Navbar = () => {
           <div className="mt-auto">
             <Button 
               variant="default" 
-              className="w-full bg-brand-primary hover:bg-brand-secondary text-white rounded-full button-hover-effect group"
+              className="w-full bg-frauwa-800 hover:bg-frauwa-900 text-white rounded-full button-hover-effect group"
               onClick={scrollToContact}
             >
-              <CalendarCheck className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-              Book Now
+              <Phone className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+              Contact Us
             </Button>
           </div>
         </div>
