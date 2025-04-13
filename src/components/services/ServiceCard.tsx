@@ -17,12 +17,26 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   // Properly handle image paths
   const imageUrl = React.useMemo(() => {
-    if (image.startsWith("public/")) {
+    // Handle lovable uploads format
+    if (image.startsWith("public/lovable-uploads/")) {
       return image.replace("public/", "/");
-    } else if (!image.startsWith("/") && !image.startsWith("http")) {
+    }
+    // Handle direct lovable uploads format
+    else if (image.startsWith("/lovable-uploads/")) {
+      return image;
+    }
+    // Handle absolute path format
+    else if (image.startsWith("/")) {
+      return image;
+    }
+    // Handle http/https URLs
+    else if (image.startsWith("http")) {
+      return image;
+    }
+    // Default case - add leading slash
+    else {
       return `/${image}`;
     }
-    return image;
   }, [image]);
 
   return (

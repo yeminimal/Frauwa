@@ -8,22 +8,22 @@ const RoofingServices = () => {
     {
       title: "Aluminum Roofing",
       description: "Premium, lightweight and durable aluminum roofing solutions that offer excellent weather resistance and longevity for residential and commercial buildings.",
-      image: "/public/lovable-uploads/8abc3fa8-7eb9-4beb-9aa3-ccbb907ab15c.png"
+      image: "/lovable-uploads/f1e1e6cb-4076-41ac-9405-99a58fd23657.png" // Aluminum roofing image
     },
     {
       title: "Gerrard Roofing",
       description: "Stylish and robust Gerrard stone-coated roofing tiles that combine the beauty of traditional roofing materials with enhanced durability and weather protection.",
-      image: "/public/lovable-uploads/4f292dc5-0606-4121-b0e4-125b4ab57e82.png"
+      image: "/lovable-uploads/a8831624-fa12-4ba5-90ba-fbae9d8d8753.png" // Gerrard roofing image
     },
     {
       title: "Roof Cladding",
       description: "Professional roof cladding services that add both aesthetic appeal and protective qualities to your building, available in various materials and finishes.",
-      image: "/public/lovable-uploads/e38a15dd-c80b-430a-9612-2ef29325a382.png"
+      image: "/lovable-uploads/a7bb13be-d2e7-454c-add0-bf9473aba5c0.png" // Roof cladding image
     },
     {
       title: "Rainwater Collectors",
       description: "Efficient rainwater collection systems that complement your roofing, helping to harvest rainwater for various uses while protecting your building's foundation.",
-      image: "/public/lovable-uploads/6a6f9901-4eab-4732-9c48-4806677b24c6.png"
+      image: "/lovable-uploads/6daf215a-3d61-4d88-ab9e-d388df4d6328.png" // Villa with rainwater collection system
     }
   ];
 
