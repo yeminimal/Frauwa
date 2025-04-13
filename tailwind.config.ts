@@ -94,8 +94,8 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				display: ['Two Seasons', 'serif'],
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				display: ['Playfair Display', 'serif'],
 			},
 			letterSpacing: {
 				'tightest': '-0.036em', // -36
