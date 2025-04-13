@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { WhatsappIcon } from './icons';
 import Logo from './Logo';
 
 const Navbar = () => {
@@ -108,7 +109,7 @@ const Navbar = () => {
               className={`${!isScrolled && location.pathname === '/' ? 'bg-white text-frauwa-800 border-white hover:bg-white/90' : 'bg-frauwa-800 hover:bg-frauwa-900 text-white'} rounded-full px-6 button-hover-effect group`}
               onClick={scrollToContact}
             >
-              <Phone className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+              <WhatsappIcon className="mr-2 h-4 w-4 text-[#25D366] group-hover:scale-110 transition-transform" />
               Contact Us
             </Button>
           </div>
@@ -179,7 +180,7 @@ const Navbar = () => {
               className="w-full bg-frauwa-800 hover:bg-frauwa-900 text-white rounded-full button-hover-effect group"
               onClick={scrollToContact}
             >
-              <Phone className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+              <WhatsappIcon className="mr-2 h-4 w-4 text-[#25D366] group-hover:scale-110 transition-transform" />
               Contact Us
             </Button>
           </div>

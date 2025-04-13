@@ -1,7 +1,7 @@
-
 import React, { useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { WhatsappIcon } from './icons';
 
 const Hero = () => {
   useEffect(() => {
@@ -37,7 +37,7 @@ const Hero = () => {
       {/* Background Image with Parallax Effect */}
       <div className="parallax-bg">
         <img 
-          src="/public/lovable-uploads/5591e324-442a-4504-b366-6368c02c8b75.png" 
+          src="/lovable-uploads/5591e324-442a-4504-b366-6368c02c8b75.png" 
           alt="Modern West African Architecture" 
           className="hero-bg"
         />
@@ -46,7 +46,7 @@ const Hero = () => {
       {/* Content */}
       <div className="hero-content container mx-auto px-6 md:px-8 text-center md:text-left">
         <div className="max-w-3xl">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display tracking-tightest text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display tracking-tightest text-white mb-6 leading-tight" style={{ letterSpacing: "-0.036em" }}>
             Elevate Your Space with Signature Roofing & Décor
           </h1>
           
@@ -59,7 +59,7 @@ const Hero = () => {
               className="bg-white text-frauwa-800 hover:bg-white/90 rounded-full px-8 py-6 button-hover-effect group"
               onClick={scrollToContact}
             >
-              <Phone className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
+              <WhatsappIcon className="mr-2 h-5 w-5 text-[#25D366] group-hover:rotate-12 transition-transform" />
               Contact Us
             </Button>
             <Button 

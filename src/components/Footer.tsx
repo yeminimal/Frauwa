@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone, Mail, Instagram, Facebook, Twitter, ArrowRight } from 'lucide-react';
+import { WhatsappIcon } from './icons';
 import Logo from './Logo';
 
 const Footer = () => {
@@ -130,7 +131,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="https://wa.me/+2347083330386" className="text-muted-foreground hover:text-frauwa-800 transition-colors flex items-center">
-                  <Phone size={16} className="mr-2 text-frauwa-800" />
+                  <WhatsappIcon size={16} className="mr-2 text-[#25D366]" />
                   +234 708 333 0386 (WhatsApp)
                 </a>
               </li>
@@ -162,6 +163,9 @@ const Footer = () => {
             <Link to="/terms-of-service" onClick={() => window.scrollTo(0, 0)} className="text-muted-foreground hover:text-frauwa-800 transition-colors text-sm">
               Terms of Service
             </Link>
+            <a href="https://x.com/yeminimal" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-frauwa-800 transition-colors text-sm">
+              designed by @yeminimal
+            </a>
           </div>
         </div>
       </div>

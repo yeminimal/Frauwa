@@ -1,12 +1,13 @@
 
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { WhatsappIcon } from '../icons';
 import ContactInfoItem from './ContactInfoItem';
 
 const ContactInfo = () => {
   const contactInfo = [
     {
-      icon: <Phone size={18} className="text-frauwa-800" />,
+      icon: <WhatsappIcon size={18} className="text-[#25D366]" />,
       title: "WhatsApp",
       content: "+234 708 333 0386",
       link: "https://wa.me/+2347083330386"

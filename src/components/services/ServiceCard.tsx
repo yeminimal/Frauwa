@@ -41,7 +41,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
   return (
     <div 
-      className="service-card h-96 rounded-lg overflow-hidden animate-reveal shadow-card"
+      className="service-card h-96 rounded-lg overflow-hidden animate-reveal shadow-card relative"
       style={{ transitionDelay: `${delay}ms` }}
     >
       <img
@@ -54,9 +54,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           target.src = "/placeholder.svg";
         }}
       />
-      <div className="service-card-content">
+      <div className="absolute inset-0 bg-gradient-to-t from-frauwa-800/90 to-frauwa-800/10"></div>
+      <div className="service-card-content absolute bottom-0 left-0 w-full p-6 z-10">
         <h3 className="text-xl font-display text-white tracking-tightest">{title}</h3>
-        <p className="service-card-description text-white/90 text-sm tracking-tighter">
+        <p className="service-card-description text-white/90 text-sm tracking-tighter mt-2">
           {description}
         </p>
       </div>

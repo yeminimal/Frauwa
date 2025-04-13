@@ -16,7 +16,7 @@ const ContactInfoItem: React.FC<ContactInfoItemProps> = ({ icon, title, content,
           {icon}
         </div>
         <div>
-          <h4 className="font-medium text-foreground">{title}</h4>
+          <h4 className="font-bold text-foreground">{title}</h4>
           <a href={link} className="text-muted-foreground mt-1 hover:text-brand-primary transition-colors">
             {content}
           </a>
@@ -31,7 +31,7 @@ const ContactInfoItem: React.FC<ContactInfoItemProps> = ({ icon, title, content,
         {icon}
       </div>
       <div>
-        <h4 className="font-medium text-foreground">{title}</h4>
+        <h4 className="font-bold text-foreground">{title}</h4>
         <p className="text-muted-foreground mt-1">{content}</p>
       </div>
     </div>
