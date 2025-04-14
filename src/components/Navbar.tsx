@@ -125,7 +125,7 @@ const Navbar = () => {
         </div>
       </div>
       
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay - Always white background regardless of scroll position */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-white flex flex-col pt-20 pb-6 px-6 md:hidden animate-fade-in">
           {/* Close button at the top */}

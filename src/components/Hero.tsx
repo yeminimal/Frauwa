@@ -47,17 +47,17 @@ const Hero = () => {
       {/* Content */}
       <div className="hero-content container mx-auto px-6 md:px-8 text-center md:text-left">
         <div className="max-w-3xl">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display tracking-tightest text-white mb-6 leading-tight drop-shadow-md" style={{ letterSpacing: "-0.036em" }}>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display tracking-tightest text-white mb-6 leading-tight drop-shadow-lg" style={{ letterSpacing: "-0.036em" }}>
             Elevate Your Space with Signature Roofing & Décor
           </h1>
           
-          <p className="text-white/80 text-lg md:text-xl mb-10 max-w-xl tracking-tighter drop-shadow">
-            Premium roofing solutions and sophisticated interior & exterior décor services for the discerning West African client.
+          <p className="text-white/80 text-lg md:text-xl mb-10 max-w-xl tracking-tighter drop-shadow-lg">
+            Premium roofing solutions and sophisticated interior & exterior décor services for the discerning Nigerian client.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button 
-              className="bg-white text-frauwa-800 hover:bg-white/90 rounded-full px-8 py-6 button-hover-effect group drop-shadow-md"
+              className="bg-white text-frauwa-800 hover:bg-white/90 rounded-full px-8 py-6 button-hover-effect group drop-shadow-lg"
               onClick={scrollToContact}
             >
               <WhatsappIcon className="mr-2 h-5 w-5 text-frauwa-800 group-hover:rotate-12 transition-transform" />
@@ -65,7 +65,7 @@ const Hero = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-white text-white hover:bg-white/10 rounded-full px-8 py-6 button-hover-effect group drop-shadow-md"
+              className="border-white text-white hover:bg-frauwa-800 hover:border-frauwa-800 bg-frauwa-800 rounded-full px-8 py-6 button-hover-effect group drop-shadow-lg"
               onClick={scrollToServices}
             >
               Explore Services

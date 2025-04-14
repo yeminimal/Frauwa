@@ -29,14 +29,14 @@ const Contact = () => {
           </div>
           
           {/* WhatsApp CTA */}
-          <div className="md:col-span-3 flex flex-col items-center justify-center bg-white rounded-2xl shadow-card p-12 animate-reveal">
+          <div className="md:col-span-3 flex flex-col items-center justify-center bg-white rounded-2xl shadow-card p-8 animate-reveal">
             <h3 className="font-display text-3xl mb-6 text-frauwa-800 text-center">Chat with Us on WhatsApp</h3>
             <p className="text-muted-foreground mb-10 text-center max-w-md">
               Have questions about our services? Get quick responses and personalized assistance through WhatsApp.
             </p>
             <Button 
               size="lg"
-              className="bg-frauwa-800 hover:bg-frauwa-900 text-white rounded-full px-8 py-7 text-lg button-hover-effect group"
+              className="bg-frauwa-800 hover:bg-frauwa-900 text-white rounded-full px-8 py-7 text-lg button-hover-effect group w-auto max-w-full"
               onClick={() => window.open('https://wa.me/+2347083330386', '_blank')}
             >
               <WhatsappIcon className="mr-2 h-6 w-6 text-white group-hover:scale-110 transition-transform" />
