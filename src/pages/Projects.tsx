@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
@@ -36,49 +35,70 @@ const Projects = () => {
     };
   }, []);
 
-  // Project data
+  // Updated project data with compressed and optimized images
   const projects = [
     {
-      title: "Modern Aluminum Roofing",
+      title: "Villa Interior Transformation",
       location: "Lagos, Nigeria",
-      description: "Premium aluminum roofing installation for a contemporary residential building, providing durability and aesthetic appeal.",
-      image: "/public/lovable-uploads/8abc3fa8-7eb9-4beb-9aa3-ccbb907ab15c.png",
+      description: "Complete interior redesign featuring premium materials, custom lighting, and modern furnishings for a luxury residential villa.",
+      image: "/lovable-uploads/2540f768-8c07-421b-b9b5-3abe55579bf9.png",
+      category: "Interior"
+    },
+    {
+      title: "Commercial Complex Roofing",
+      location: "Abuja, Nigeria",
+      description: "Large-scale roofing installation using premium aluminum materials for a modern commercial complex, ensuring durability and style.",
+      image: "/lovable-uploads/b56643bc-e27a-439c-991f-0784723a8e98.png",
       category: "Roofing"
     },
     {
       title: "Executive Office Interior",
-      location: "Abuja, Nigeria",
-      description: "Sophisticated office space design with custom partitioning, 3D wall panels, and premium materials for a corporate client.",
-      image: "/public/lovable-uploads/821faeae-e9ca-46d5-8324-f781e1f50ff9.png",
+      location: "Port Harcourt, Nigeria",
+      description: "Modern office space featuring custom partitioning, premium wall panels, and sophisticated design elements for a corporate client.",
+      image: "/lovable-uploads/4974683f-3f58-4cb0-886f-2dc9d3f79b00.png",
       category: "Interior"
     },
     {
-      title: "Luxury Villa Exterior Cladding",
-      location: "Port Harcourt, Nigeria",
-      description: "Exterior wall cladding with premium materials enhancing the architectural beauty of this luxury residential property.",
-      image: "/public/lovable-uploads/e38a15dd-c80b-430a-9612-2ef29325a382.png",
+      title: "Luxury Residential Exterior",
+      location: "Lekki, Nigeria",
+      description: "Comprehensive exterior renovation including premium cladding, custom windows, and architectural lighting for a luxury home.",
+      image: "/lovable-uploads/4e0fdbed-0cbf-4bd6-87eb-2b7ef0c6840e.png",
       category: "Exterior"
     },
     {
-      title: "Commercial Building Roof Overhaul",
-      location: "Ibadan, Nigeria",
-      description: "Complete roofing renovation for a commercial complex, featuring Gerrard stone-coated roof tiles for durability and elegance.",
-      image: "/public/lovable-uploads/4f292dc5-0606-4121-b0e4-125b4ab57e82.png",
-      category: "Roofing"
-    },
-    {
-      title: "Residential Interior Transformation",
-      location: "Kano, Nigeria",
-      description: "Complete interior redesign featuring UV marble sheets, sintered stones, and custom-designed 3D wall panels.",
-      image: "/public/lovable-uploads/6528797f-7be1-4a59-be12-5ffe51ab25a3.png",
+      title: "Modern Home Interior",
+      location: "Victoria Island, Nigeria",
+      description: "Complete interior transformation featuring UV marble sheets, 3D wall panels, and custom-designed living spaces.",
+      image: "/lovable-uploads/5591e324-442a-4504-b366-6368c02c8b75.png",
       category: "Interior"
     },
     {
       title: "Premium Balcony Design",
-      location: "Calabar, Nigeria",
-      description: "Elegant balcony design with stainless steel railings and custom window installations for a contemporary apartment.",
-      image: "/public/lovable-uploads/b03eea3e-3350-419b-99a4-0843a045e52c.png",
+      location: "Ikoyi, Nigeria",
+      description: "Luxurious balcony renovation with premium railings, custom flooring, and integrated lighting for a high-end apartment.",
+      image: "/lovable-uploads/6a6f9901-4eab-4732-9c48-4806677b24c6.png",
       category: "Exterior"
+    },
+    {
+      title: "Corporate Office Design",
+      location: "Lagos, Nigeria",
+      description: "Modern office interior featuring premium partitions, ergonomic workspaces, and sophisticated meeting areas.",
+      image: "/lovable-uploads/76ddb981-3792-4229-ac77-2d3d84467b45.png",
+      category: "Interior"
+    },
+    {
+      title: "Residential Roofing Project",
+      location: "Abuja, Nigeria",
+      description: "Premium stone-coated roofing installation for a luxury residential property, combining durability with aesthetic appeal.",
+      image: "/lovable-uploads/796b4004-5546-4d90-950d-902ed545b137.png",
+      category: "Roofing"
+    },
+    {
+      title: "Contemporary Villa Design",
+      location: "Port Harcourt, Nigeria",
+      description: "Comprehensive interior and exterior renovation featuring premium materials and modern design elements.",
+      image: "/lovable-uploads/8295b145-5a6a-4302-8bd8-54731822b82f.png",
+      category: "Interior"
     }
   ];
 
@@ -91,7 +111,6 @@ const Projects = () => {
       
       <Navbar />
       <main>
-        {/* Page Header */}
         <section className="pt-40 pb-20 bg-frauwa-50">
           <div className="container mx-auto px-6 md:px-8">
             <div className="text-center max-w-3xl mx-auto">
@@ -108,7 +127,6 @@ const Projects = () => {
           </div>
         </section>
         
-        {/* Projects Grid */}
         <section className="py-24">
           <div className="container mx-auto px-6 md:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -120,9 +138,10 @@ const Projects = () => {
                 >
                   <div className="aspect-[4/3] overflow-hidden">
                     <img 
-                      src={project.image.startsWith("public/") ? project.image.replace("public/", "/") : project.image} 
+                      src={project.image} 
                       alt={project.title} 
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      loading={index > 5 ? "lazy" : "eager"}
                     />
                   </div>
                   <div className="p-6">
