@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
@@ -9,7 +8,6 @@ import ExteriorServices from '../components/services/ExteriorServices';
 import Gallery from '../components/Gallery';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import CallToAction from '../components/CallToAction';
 
 const Index = () => {
   useEffect(() => {
@@ -65,7 +63,6 @@ const Index = () => {
         <InteriorServices />
         <ExteriorServices />
         <Gallery />
-        <CallToAction />
         <Contact />
       </main>
       <Footer />

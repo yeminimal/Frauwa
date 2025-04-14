@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from "@/lib/utils";
@@ -23,19 +22,16 @@ const Navbar = () => {
     };
   }, []);
 
-  // Function to handle section scrolling or page navigation
   const handleNavigation = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
     
     if (location.pathname === '/') {
-      // If we're on the home page, scroll to section
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
         if (isMobileMenuOpen) setIsMobileMenuOpen(false);
       }
     } else {
-      // If on another page, navigate to home with the hash
       window.location.href = `/#${sectionId}`;
     }
   };
@@ -61,10 +57,8 @@ const Navbar = () => {
     >
       <div className="container max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Logo variant={!isScrolled && location.pathname === '/' ? 'white' : 'default'} />
           
-          {/* Desktop Menu */}
           <nav className="hidden md:flex items-center space-x-8">
             <a 
               href="#roofing" 
@@ -102,7 +96,6 @@ const Navbar = () => {
             </a>
           </nav>
           
-          {/* CTA Button */}
           <div className="hidden md:block">
             <Button 
               variant={!isScrolled && location.pathname === '/' ? "outline" : "default"} 
@@ -114,7 +107,6 @@ const Navbar = () => {
             </Button>
           </div>
           
-          {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={`md:hidden p-2 ${!isScrolled && location.pathname === '/' ? 'text-white hover:bg-white/10' : 'text-frauwa-800 hover:bg-frauwa-100'} rounded-full transition-colors`}
@@ -125,10 +117,8 @@ const Navbar = () => {
         </div>
       </div>
       
-      {/* Mobile Menu Overlay - Always white background regardless of scroll position */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white flex flex-col pt-20 pb-6 px-6 md:hidden animate-fade-in">
-          {/* Close button at the top */}
+        <div className="fixed inset-0 z-40 bg-white flex flex-col pt-20 pb-6 px-6 md:hidden animate-fade-in shadow-xl">
           <button 
             onClick={() => setIsMobileMenuOpen(false)}
             className="absolute top-4 right-4 p-2 text-foreground hover:bg-frauwa-100 rounded-full transition-colors"
