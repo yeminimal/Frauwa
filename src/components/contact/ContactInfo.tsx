@@ -7,7 +7,7 @@ import ContactInfoItem from './ContactInfoItem';
 const ContactInfo = () => {
   const contactInfo = [
     {
-      icon: <WhatsappIcon size={18} className="text-[#25D366]" />,
+      icon: <WhatsappIcon size={18} className="text-frauwa-800" />,
       title: "WhatsApp",
       content: "+234 708 333 0386",
       link: "https://wa.me/+2347083330386"

@@ -31,28 +31,28 @@ const Gallery = () => {
   
   const images = [
     {
-      src: "/public/lovable-uploads/4f292dc5-0606-4121-b0e4-125b4ab57e82.png",
-      alt: "Roofing project"
+      src: "/lovable-uploads/3f0b7484-8909-4d96-907c-f151491ea9ba.png",
+      alt: "Modern interior design"
     },
     {
-      src: "/public/lovable-uploads/6a6f9901-4eab-4732-9c48-4806677b24c6.png",
-      alt: "Rainwater collection system"
+      src: "/lovable-uploads/aa1c834d-f629-4b29-b078-cb2d18ddf626.png",
+      alt: "Contemporary living space"
     },
     {
-      src: "/public/lovable-uploads/e38a15dd-c80b-430a-9612-2ef29325a382.png",
-      alt: "Roof cladding"
+      src: "/lovable-uploads/eee67e8c-5d38-4192-97e0-037c6c9d57c7.png",
+      alt: "Indoor plants and design elements"
     },
     {
-      src: "/public/lovable-uploads/8abc3fa8-7eb9-4beb-9aa3-ccbb907ab15c.png",
-      alt: "Aluminum roofing"
+      src: "/lovable-uploads/14b0c6e1-14cd-49f2-99a4-7a0f54edc6b6.png",
+      alt: "Office space design"
     },
     {
-      src: "/public/lovable-uploads/122dbb46-e5d1-417e-bf8a-38f5f613aedd.png",
-      alt: "Interior décor"
+      src: "/lovable-uploads/0c0ae755-2d64-4573-83a2-2b08fe271a55.png",
+      alt: "Modern window installation"
     },
     {
-      src: "/public/lovable-uploads/6528797f-7be1-4a59-be12-5ffe51ab25a3.png",
-      alt: "3D wall panels"
+      src: "/lovable-uploads/4e0fdbed-0cbf-4bd6-87eb-2b7ef0c6840e.png",
+      alt: "Interior décor with plants"
     }
   ];
 
@@ -80,10 +80,10 @@ const Gallery = () => {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <img 
-                src={image.src.startsWith("public/") ? image.src.replace("public/", "/") : image.src} 
+                src={image.src} 
                 alt={image.alt} 
                 className="gallery-image" 
-                loading="lazy"
+                loading="eager"
               />
             </div>
           ))}

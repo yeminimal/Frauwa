@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import ContactInfo from './contact/ContactInfo';
@@ -35,10 +36,10 @@ const Contact = () => {
             </p>
             <Button 
               size="lg"
-              className="bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full px-8 py-7 text-lg button-hover-effect group"
+              className="bg-frauwa-800 hover:bg-frauwa-900 text-white rounded-full px-8 py-7 text-lg button-hover-effect group"
               onClick={() => window.open('https://wa.me/+2347083330386', '_blank')}
             >
-              <WhatsappIcon className="mr-2 h-6 w-6 group-hover:scale-110 transition-transform" />
+              <WhatsappIcon className="mr-2 h-6 w-6 text-white group-hover:scale-110 transition-transform" />
               Chat with Us on WhatsApp
             </Button>
           </div>

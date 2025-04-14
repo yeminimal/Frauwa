@@ -109,8 +109,8 @@ const Navbar = () => {
               className={`${!isScrolled && location.pathname === '/' ? 'bg-white text-frauwa-800 border-white hover:bg-white/90' : 'bg-frauwa-800 hover:bg-frauwa-900 text-white'} rounded-full px-6 button-hover-effect group`}
               onClick={scrollToContact}
             >
-              <WhatsappIcon className="mr-2 h-4 w-4 text-[#25D366] group-hover:scale-110 transition-transform" />
-              Contact Us
+              <WhatsappIcon className={`mr-2 h-4 w-4 ${!isScrolled && location.pathname === '/' ? 'text-frauwa-800' : 'text-white'} group-hover:scale-110 transition-transform`} />
+              Chat with Us
             </Button>
           </div>
           
@@ -180,8 +180,8 @@ const Navbar = () => {
               className="w-full bg-frauwa-800 hover:bg-frauwa-900 text-white rounded-full button-hover-effect group"
               onClick={scrollToContact}
             >
-              <WhatsappIcon className="mr-2 h-4 w-4 text-[#25D366] group-hover:scale-110 transition-transform" />
-              Contact Us
+              <WhatsappIcon className="mr-2 h-4 w-4 text-white group-hover:scale-110 transition-transform" />
+              Chat with Us
             </Button>
           </div>
         </div>
