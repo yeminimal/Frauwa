@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -9,7 +8,7 @@ const Hero = () => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const parallaxBg = document.querySelector('.parallax-bg') as HTMLElement;
-      
+
       if (parallaxBg) {
         parallaxBg.style.transform = `translateY(${scrollTop * 0.4}px)`;
       }
@@ -34,18 +33,20 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero-section">
+    <section className="hero-section relative">
       {/* Background Image with Parallax Effect */}
-      <div className="parallax-bg">
+      <div className="parallax-bg relative">
         <img 
-          src="/lovable-uploads/8295b145-5a6a-4302-8bd8-54731822b82f.png" 
+          src="/lovable-uploads/HeroImage.jpg" 
           alt="Modern West African Architecture" 
-          className="hero-bg"
+          className="hero-bg w-full h-full object-cover"
         />
+        {/* Green Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-green-500/50 to-green-700/30 pointer-events-none"></div>
       </div>
       
       {/* Content */}
-      <div className="hero-content container mx-auto px-6 md:px-8 text-center md:text-left">
+      <div className="hero-content container mx-auto px-6 md:px-8 text-center md:text-left relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display tracking-tightest text-white mb-6 leading-tight drop-shadow-lg" style={{ letterSpacing: "-0.036em" }}>
             Elevate Your Space with Signature Roofing & Décor
