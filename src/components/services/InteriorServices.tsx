@@ -33,7 +33,7 @@ const InteriorServices = () => {
     {
       title: "Office Space Design & Partitioning",
       description: "Comprehensive office design and partitioning solutions that optimize workspace functionality while maintaining aesthetic appeal and brand alignment.",
-      image: "/lovable-uploads/OfficePartioning.jpg" // Interior office space image
+      image: "/lovable-uploads/OfficePartitioning.jpg" // Interior office space image
     }
   ];
 
