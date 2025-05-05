@@ -266,6 +266,7 @@ body.dropdown-open {
   overflow: hidden;
 }
 
+/* Adjusted gradient transparency and z-index to ensure visibility of the background image */
 .hero-section::after {
   content: '';
   position: absolute;
@@ -273,14 +274,8 @@ body.dropdown-open {
   left: 0;
   right: 0;
   bottom: 0;
-  /* Adjusted gradient transparency to make the background image more visible */
-  background: linear-gradient(to right, rgba(13, 77, 51, 0.5) 0%, rgba(13, 77, 51, 0.3) 100%);
+  background: linear-gradient(to right, rgba(13, 77, 51, 0.4) 0%, rgba(13, 77, 51, 0.2) 100%);
   z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
 }
 
 .hero-bg {
@@ -289,7 +284,13 @@ body.dropdown-open {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+  z-index: 0; /* Places the background image below other elements */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Ensures the content is above the gradient and background image */
 }
 
 /* Drop shadow for better text visibility */
