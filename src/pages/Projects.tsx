@@ -69,7 +69,7 @@ const Projects = () => {
       title: "Modern Home Interior",
       location: "Victoria Island, Nigeria",
       description: "Complete interior transformation featuring UV marble sheets, 3D wall panels, and custom-designed living spaces.",
-      image: "/lovable-uploads/5591e324-442a-4504-b366-6368c02c8b75.png",
+      image: "/lovable-uploads/ModernHomeInterior.jpg", // Updated image reference
       category: "Interior"
     },
     {
