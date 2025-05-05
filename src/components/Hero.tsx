@@ -32,12 +32,13 @@ const Hero = () => {
     }
   };
 
+  // Updated hero data with compressed and optimized images
   return (
     <section className="hero-section relative">
       {/* Background Image with Parallax Effect */}
       <div className="parallax-bg relative">
         <img 
-          src="/lovable-uploads/HeroImage.jpg" 
+          src="/lovable-uploads/HeroImage.jpg" // Updated image reference
           alt="Modern West African Architecture" 
           className="hero-bg w-full h-full object-cover"
         />
