@@ -90,7 +90,7 @@ const Projects = () => {
       title: "Residential Roofing Project",
       location: "Abuja, Nigeria",
       description: "Premium stone-coated roofing installation for a luxury residential property, combining durability with aesthetic appeal.",
-      image: "/lovable-uploads/796b4004-5546-4d90-950d-902ed545b137.png",
+      image: "/lovable-uploads/ResidentiaRoofing.jpg", // Updated image reference
       category: "Roofing"
     },
     {
