@@ -41,28 +41,28 @@ const Projects = () => {
       title: "Villa Interior Transformation",
       location: "Lagos, Nigeria",
       description: "Complete interior redesign featuring premium materials, custom lighting, and modern furnishings for a luxury residential villa.",
-      image: "/lovable-uploads/2540f768-8c07-421b-b9b5-3abe55579bf9.png",
+      image: "/lovable-uploads/VillaInteriorTransformation.jpg", // Updated image reference
       category: "Interior"
     },
     {
       title: "Commercial Complex Roofing",
       location: "Abuja, Nigeria",
       description: "Large-scale roofing installation using premium aluminum materials for a modern commercial complex, ensuring durability and style.",
-      image: "/lovable-uploads/b56643bc-e27a-439c-991f-0784723a8e98.png",
+      image: "/lovable-uploads/CommercialComplexRoofing.jpg", // Updated image reference
       category: "Roofing"
     },
     {
       title: "Executive Office Interior",
       location: "Port Harcourt, Nigeria",
       description: "Modern office space featuring custom partitioning, premium wall panels, and sophisticated design elements for a corporate client.",
-      image: "/lovable-uploads/4974683f-3f58-4cb0-886f-2dc9d3f79b00.png",
+      image: "/lovable-uploads/ExecutiveOfficeInterior.jpg", // Updated image reference
       category: "Interior"
     },
     {
       title: "Luxury Residential Exterior",
       location: "Lekki, Nigeria",
       description: "Comprehensive exterior renovation including premium cladding, custom windows, and architectural lighting for a luxury home.",
-      image: "/lovable-uploads/4e0fdbed-0cbf-4bd6-87eb-2b7ef0c6840e.png",
+      image: "/lovable-uploads/LuxuryResidentialExterior.jpg", // Updated image reference
       category: "Exterior"
     },
     {
