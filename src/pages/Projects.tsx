@@ -76,7 +76,7 @@ const Projects = () => {
       title: "Premium Balcony Design",
       location: "Ikoyi, Nigeria",
       description: "Luxurious balcony renovation with premium railings, custom flooring, and integrated lighting for a high-end apartment.",
-      image: "/lovable-uploads/6a6f9901-4eab-4732-9c48-4806677b24c6.png",
+      image: "/lovable-uploads/PremiumBalconyDesign.jpg", // Updated image reference
       category: "Exterior"
     },
     {
