@@ -35,12 +35,12 @@ const Contact = () => {
               Have questions about our services? Get quick responses and personalized assistance through WhatsApp.
             </p>
             <Button 
-              size="lg"
-              className="bg-frauwa-800 hover:bg-frauwa-900 text-white rounded-full px-8 py-7 text-lg button-hover-effect group w-auto max-w-full"
-              onClick={() => window.open('https://wa.me/+2347083330386', '_blank')}
-            >
-              <WhatsappIcon className="mr-2 h-6 w-6 text-white group-hover:scale-110 transition-transform" />
-              Chat with Us on WhatsApp
+             size="lg"
+              className="bg-frauwa-800 hover:bg-frauwa-900 text-white rounded-full px-6 py-5 text-base button-hover-effect group w-auto max-w-full"
+               onClick={() => window.open('https://wa.me/+2347083330386', '_blank')}
+               >
+               <WhatsappIcon className="mr-2 h-5 w-5 text-white group-hover:scale-110 transition-transform" />
+             Chat with Us on WhatsApp
             </Button>
           </div>
         </div>
