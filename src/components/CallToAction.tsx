@@ -13,15 +13,6 @@ const CallToAction = () => {
   
   return (
     <section className="py-20 bg-frauwa-800 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <img 
-          src="/public/lovable-uploads/4974683f-3f58-4cb0-886f-2dc9d3f79b00.png"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-      </div>
-      
       <div className="container mx-auto px-6 md:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-display tracking-tightest text-white mb-6">
