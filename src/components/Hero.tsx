@@ -32,16 +32,17 @@ const Hero = () => {
     }
   };
 
-  // Updated hero data with compressed and optimized images
   return (
     <section className="hero-section relative">
       {/* Background Image with Parallax Effect */}
       <div className="parallax-bg relative">
         <img 
-          src="/lovable-uploads/HeroImage.jpg" // Updated image reference
+          src="/lovable-uploads/HeroImage.jpg" 
           alt="Modern West African Architecture" 
           className="hero-bg w-full h-full object-cover"
         />
+        {/* Green Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-green-500/50 to-green-700/30 pointer-events-none"></div>
       </div>
       
       {/* Content */}
