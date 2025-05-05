@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
@@ -129,18 +128,6 @@ const About = () => {
                       </a>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="order-1 lg:order-2 animate-reveal" style={{ transitionDelay: '200ms' }}>
-                <div className="relative">
-                  <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                    <img 
-                      src="/public/lovable-uploads/5591e324-442a-4504-b366-6368c02c8b75.png" 
-                      alt="Frauwa workspace" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-frauwa-800 rounded-lg -z-10"></div>
                 </div>
               </div>
             </div>
