@@ -37,7 +37,7 @@ const Hero = () => {
       {/* Background Image with Parallax Effect */}
       <div className="parallax-bg relative">
         <img 
-          src="/public/lovable-uploads/HeroImage.jpg" 
+          src="/lovable-uploads/HeroImage.jpg" 
           alt="Modern West African Architecture" 
           className="hero-bg w-full h-full object-cover"
         />
