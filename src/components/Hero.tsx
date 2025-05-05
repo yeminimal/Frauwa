@@ -5,14 +5,16 @@ import { WhatsappIcon } from './icons';
 
 const Hero = () => {
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const parallaxBg = document.querySelector('.parallax-bg') as HTMLElement;
+  const parallaxBg = document.querySelector('.parallax-bg') as HTMLElement;
+  const gradientOverlay = document.querySelector('.bg-gradient-to-b') as HTMLElement;
 
-      if (parallaxBg) {
-        parallaxBg.style.transform = `translateY(${scrollTop * 0.4}px)`;
-      }
-    };
+  if (parallaxBg) {
+    console.log("Parallax Background Styles:", window.getComputedStyle(parallaxBg));
+  }
+  if (gradientOverlay) {
+    console.log("Gradient Overlay Styles:", window.getComputedStyle(gradientOverlay));
+  }
+}, []);
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
