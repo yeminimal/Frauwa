@@ -83,14 +83,14 @@ const Projects = () => {
       title: "Corporate Office Design",
       location: "Lagos, Nigeria",
       description: "Modern office interior featuring premium partitions, ergonomic workspaces, and sophisticated meeting areas.",
-      image: "/lovable-uploads/76ddb981-3792-4229-ac77-2d3d84467b45.png",
+      image: "/lovable-uploads/CorporateOfficeDesign.jpg", // Updated image reference
       category: "Interior"
     },
     {
       title: "Residential Roofing Project",
       location: "Abuja, Nigeria",
       description: "Premium stone-coated roofing installation for a luxury residential property, combining durability with aesthetic appeal.",
-      image: "/lovable-uploads/ResidentiaRoofing.jpg", // Updated image reference
+      image: "/lovable-uploads/796b4004-5546-4d90-950d-902ed545b137.png",
       category: "Roofing"
     },
     {
