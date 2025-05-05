@@ -23,7 +23,7 @@ const RoofingServices = () => {
     {
       title: "Rainwater Collectors",
       description: "Efficient rainwater collection systems that complement your roofing, helping to harvest rainwater for various uses while protecting your building's foundation.",
-      image: "/lovable-uploads/6daf215a-3d61-4d88-ab9e-d388df4d6328.png" // Villa with rainwater collection system
+      image: "/lovable-uploads/RainCollector.jpg" // Villa with rainwater collection system
     }
   ];
 
