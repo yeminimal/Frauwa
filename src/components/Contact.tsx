@@ -41,11 +41,11 @@ const Contact = () => {
             </p>
             <Button
               size="lg"
-              className="bg-frauwa-800 hover:bg-frauwa-900 text-white rounded-full px-8 py-7 text-base button-hover-effect group w-64 flex justify-center items-center"
+              className="bg-frauwa-800 hover:bg-frauwa-900 text-white rounded-full px-8 py-7 text-base button-hover-effect group w-full flex justify-center items-center"
               onClick={() => window.open('https://wa.me/+2347083330386', '_blank')}
             >
-              <WhatsappIcon className="mr-0.25 h-5 w-5 text-white group-hover:scale-110 transition-transform" />
-              Chat with Us on WhatsApp
+              <WhatsappIcon className="mr-1 h-6 w-6 text-white group-hover:scale-110 transition-transform" />
+              Chat with Us
             </Button>
           </div>
         </div>
