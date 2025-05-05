@@ -97,7 +97,7 @@ const Projects = () => {
       title: "Contemporary Villa Design",
       location: "Port Harcourt, Nigeria",
       description: "Comprehensive interior and exterior renovation featuring premium materials and modern design elements.",
-      image: "/lovable-uploads/8295b145-5a6a-4302-8bd8-54731822b82f.png",
+      image: "/lovable-uploads/ContemporaryVillaDesign.jpg", // Updated image reference
       category: "Interior"
     }
   ];
