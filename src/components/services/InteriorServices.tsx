@@ -13,7 +13,7 @@ const InteriorServices = () => {
     {
       title: "WPC Sheets",
       description: "Versatile Wood-Plastic Composite sheets offering the warm aesthetics of wood with enhanced durability and moisture resistance for interior applications.",
-      image: "/lovable-uploads/WPCSheet.jpf" // Interior shelving image
+      image: "/lovable-uploads/WPCSheet.jpg" // Interior shelving image
     },
     {
       title: "Sintered Stones",
