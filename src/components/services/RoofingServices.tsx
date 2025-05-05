@@ -18,7 +18,7 @@ const RoofingServices = () => {
     {
       title: "Roof Cladding",
       description: "Professional roof cladding services that add both aesthetic appeal and protective qualities to your building, available in various materials and finishes.",
-      image: "/lovable-uploads/a7bb13be-d2e7-454c-add0-bf9473aba5c0.png" // Roof cladding image
+      image: "/lovable-uploads/RoofCladding.jpg" // Roof cladding image
     },
     {
       title: "Rainwater Collectors",
