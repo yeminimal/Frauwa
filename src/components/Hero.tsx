@@ -41,8 +41,6 @@ const Hero = () => {
           alt="Modern West African Architecture" 
           className="hero-bg w-full h-full object-cover"
         />
-        {/* Green Gradient Overlay with 50% Transparency */}
-        <div className="absolute inset-0 bg-gradient-to-b from-green-500/50 to-green-700/50 pointer-events-none"></div>
       </div>
       
       {/* Content */}
