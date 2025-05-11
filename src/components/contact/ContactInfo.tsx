@@ -15,8 +15,8 @@ const ContactInfo = () => {
     {
       icon: <Phone size={18} className="text-frauwa-800" />,
       title: "Call Us",
-      content: "+234 708 333 0386",
-      link: "tel:+2347083330386"
+      content: "+234 813 613 7737",
+      link: "tel:+2348136137737"
     },
     {
       icon: <Mail size={18} className="text-frauwa-800" />,

@@ -136,9 +136,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="tel:+2347083330386" className="text-muted-foreground hover:text-frauwa-800 transition-colors flex items-center">
+                <a href="tel:+2348136137737" className="text-muted-foreground hover:text-frauwa-800 transition-colors flex items-center">
                   <Phone size={16} className="mr-2 text-frauwa-800" />
-                  +234 708 333 0386
+                  +234 813 613 7737
                 </a>
               </li>
               <li>
