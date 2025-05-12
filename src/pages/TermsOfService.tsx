@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -15,6 +14,7 @@ const TermsOfService = () => {
       <Helmet>
         <title>Terms of Service | Tutchonce Cleaning Services</title>
         <meta name="description" content="Tutchonce Cleaning Services terms of service - the conditions that govern your use of our services." />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5154438827317099" crossOrigin="anonymous"></script>
       </Helmet>
       
       <Navbar />

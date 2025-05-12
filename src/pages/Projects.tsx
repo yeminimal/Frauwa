@@ -107,6 +107,7 @@ const Projects = () => {
       <Helmet>
         <title>Our Projects | Frauwa Roofs & Interior Decor</title>
         <meta name="description" content="Explore our portfolio of completed projects featuring premium roofing, interior and exterior décor across Nigeria." />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5154438827317099" crossOrigin="anonymous"></script>
       </Helmet>
       
       <Navbar />

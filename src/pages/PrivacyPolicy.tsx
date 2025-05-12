@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -15,6 +14,7 @@ const PrivacyPolicy = () => {
       <Helmet>
         <title>Privacy Policy | Tutchonce Cleaning Services</title>
         <meta name="description" content="Tutchonce Cleaning Services privacy policy - how we handle your data and protect your privacy." />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5154438827317099" crossOrigin="anonymous"></script>
       </Helmet>
       
       <Navbar />
