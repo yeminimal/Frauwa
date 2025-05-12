@@ -56,6 +56,7 @@ const Index = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Frauwa Roofs & Interior Decor | Premium Roofing & Interior Solutions" />
         <meta name="twitter:description" content="Premium roofing, interior and exterior décor services for residential and commercial buildings across Nigeria." />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5154438827317099" crossOrigin="anonymous"></script>
       </Helmet>
       
       <Navbar />
