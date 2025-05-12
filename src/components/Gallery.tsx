@@ -35,7 +35,7 @@ const Gallery = () => {
       alt: "Roofing Design"
     },
     {
-      src: "/lovable-uploads/2",
+      src: "/lovable-uploads/2.webp",
       alt: "Rainwater Collector"
     },
     {
