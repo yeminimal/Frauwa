@@ -10,6 +10,7 @@ import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const queryClient = new QueryClient();
 
