@@ -31,28 +31,28 @@ const Gallery = () => {
   
   const images = [
     {
-      src: "/lovable-uploads/3f0b7484-8909-4d96-907c-f151491ea9ba.png",
-      alt: "Modern interior design"
+      src: "/lovable-uploads/1.webp",
+      alt: "Roofing Design"
     },
     {
-      src: "/lovable-uploads/aa1c834d-f629-4b29-b078-cb2d18ddf626.png",
-      alt: "Contemporary living space"
+      src: "/lovable-uploads/2",
+      alt: "Rainwater Collector"
     },
     {
-      src: "/lovable-uploads/eee67e8c-5d38-4192-97e0-037c6c9d57c7.png",
-      alt: "Indoor plants and design elements"
+      src: "/lovable-uploads/3.webp",
+      alt: "Roofing"
     },
     {
-      src: "/lovable-uploads/14b0c6e1-14cd-49f2-99a4-7a0f54edc6b6.png",
-      alt: "Office space design"
+      src: "/lovable-uploads/4.webp",
+      alt: "Roofing"
     },
     {
-      src: "/lovable-uploads/0c0ae755-2d64-4573-83a2-2b08fe271a55.png",
-      alt: "Modern window installation"
+      src: "/lovable-uploads/5.webp",
+      alt: "Roofing"
     },
     {
-      src: "/lovable-uploads/4e0fdbed-0cbf-4bd6-87eb-2b7ef0c6840e.png",
-      alt: "Interior décor with plants"
+      src: "/lovable-uploads/6.webp",
+      alt: "Stainless Steel Railing"
     }
   ];
 
