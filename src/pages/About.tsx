@@ -65,6 +65,7 @@ const About = () => {
       <Helmet>
         <title>About Us | Frauwa Roofs & Interior Decor</title>
         <meta name="description" content="Learn more about Frauwa Roofs & Interior Decor, our mission, values, and commitment to excellence in roofing and interior design across Nigeria." />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5154438827317099" crossOrigin="anonymous"></script>
       </Helmet>
       
       <Navbar />
