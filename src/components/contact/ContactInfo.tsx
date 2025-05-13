@@ -9,14 +9,14 @@ const ContactInfo = () => {
     {
       icon: <WhatsappIcon size={18} className="text-frauwa-800" />,
       title: "WhatsApp",
-      content: "+234 708 333 0386",
-      link: "https://wa.me/+2347083330386"
+      content: "+234 813 613 7737",
+      link: "https://wa.me/+2348136137737"
     },
     {
       icon: <Phone size={18} className="text-frauwa-800" />,
       title: "Call Us",
-      content: "+234 813 613 7737",
-      link: "tel:+2348136137737"
+      content: "+234 708 333 0386",
+      link: "tel:+2347083330386"
     },
     {
       icon: <Mail size={18} className="text-frauwa-800" />,
