@@ -163,8 +163,8 @@ const Footer = () => {
             <Link to="/terms-of-service" onClick={() => window.scrollTo(0, 0)} className="text-muted-foreground hover:text-frauwa-800 transition-colors text-sm">
               Terms of Service
             </Link>
-            <a href="https://x.com/yeminimal" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-frauwa-800 transition-colors text-sm">
-              designed by @yeminimal
+            <a href="https:yeminimal.site/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-frauwa-800 transition-colors text-sm">
+              designed by Williams Martins
             </a>
           </div>
         </div>
