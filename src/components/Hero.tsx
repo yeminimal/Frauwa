@@ -1,5 +1,4 @@
 
-
 import React, { useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -35,18 +34,18 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero-section relative">
-      {/* Background Image with Parallax Effect */}
-      <div className="parallax-bg relative">
-        <img 
-          src="/lovable-uploads/1292275b-3430-4613-80bf-05939fca7ff5.png" 
-          alt="Premium Roofing Solutions" 
-          className="hero-bg w-full h-full object-cover"
-        />
-      </div>
+    <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('/lovable-uploads/1292275b-3430-4613-80bf-05939fca7ff5.png')`,
+          zIndex: 0
+        }}
+      />
       
       {/* Content */}
-      <div className="hero-content container mx-auto px-6 md:px-8 text-center md:text-left relative z-10">
+      <div className="relative z-10 container mx-auto px-6 md:px-8 text-center md:text-left">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display tracking-tightest text-white mb-6 leading-tight drop-shadow-lg" style={{ letterSpacing: "-0.036em" }}>
             Elevate Your Space with Signature Roofing & Décor
@@ -80,4 +79,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
