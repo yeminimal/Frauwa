@@ -44,6 +44,16 @@ const Hero = () => {
         }}
       />
       
+      {/* Green Gradient Overlay */}
+      <div 
+        className="absolute inset-0 w-full h-full"
+        style={{
+          background: `linear-gradient(135deg, rgba(166, 193, 149, 0.7) 0%, rgba(13, 77, 51, 0.7) 100%)`,
+          zIndex: 1,
+          mixBlendMode: 'multiply'
+        }}
+      />
+      
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 md:px-8 text-center md:text-left">
         <div className="max-w-3xl">
