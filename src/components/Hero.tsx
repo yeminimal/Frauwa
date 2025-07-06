@@ -1,4 +1,5 @@
 
+
 import React, { useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -42,8 +43,6 @@ const Hero = () => {
           alt="Premium Roofing Solutions" 
           className="hero-bg w-full h-full object-cover"
         />
-        {/* Green Gradient Overlay with reduced opacity */}
-        <div className="absolute inset-0 bg-gradient-to-b from-green-500/35 to-green-700/21 pointer-events-none"></div>
       </div>
       
       {/* Content */}
@@ -81,3 +80,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
