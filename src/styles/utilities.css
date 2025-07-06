@@ -1,0 +1,30 @@
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Glass effect */
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Drop shadow for better text visibility */
+.drop-shadow-lg {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.drop-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile button width fix */
+@media (max-width: 640px) {
+  .md\:col-span-3 .button-hover-effect {
+    width: 100%;
+    max-width: calc(100% - 2rem);
+  }
+}
