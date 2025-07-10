@@ -1,69 +1,86 @@
-# Welcome to your Lovable project
+# FRAUWA Roofs & Interior Decor
 
-## Project info
+**Website**: [https://frauwa.site](https://frauwa.site)  
+**Business Name**: FRAUWA Roofs & Interior Decor  
+**Parent Company**: FRAUWA Resources Ltd.  
+**Location**: Lagos, Nigeria
 
-**URL**: https://lovable.dev/projects/9c1f047b-b1da-49af-a329-039c50e21971
+---
 
-## How can I edit this code?
+## 🏗️ About FRAUWA
 
-There are several ways of editing your application.
+FRAUWA Roofs & Interior Decor is a leading provider of exterior and interior architectural solutions in Nigeria. As a subsidiary of FRAUWA Resources Ltd., we specialize in high-quality roofing, structural cladding, interior design, and architectural fabrications for homes, offices, and commercial spaces.
 
-**Use Lovable**
+Our goal is to elevate the spaces we work on — combining **aesthetic excellence**, **durability**, and **expert craftsmanship**.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9c1f047b-b1da-49af-a329-039c50e21971) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🔧 Services We Offer
 
-**Use your preferred IDE**
+We supply and professionally install:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- ✅ Aluminum & Gerrard Roofs  
+- ✅ Roof Cladding  
+- ✅ Rainwater Collectors  
+- ✅ Harco Board Wall Cladding  
+- ✅ Windows Fabrication & Installation  
+- ✅ Office Space Partitioning & Design  
+- ✅ Stainless Steel Fabrication & Installations  
+- ✅ Interior Decoration using 3D Wall Panels  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🌐 Website Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+The website provides a clean, modern interface to help potential clients learn about our services, browse our gallery, and contact us easily.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**Key Pages:**
+- **Home** – Overview of services and brand philosophy.
+- **About Us** – Company background and mission.
+- **Services** – Detailed list of offerings.
+- **Gallery** – Visual showcase of past projects.
+- **Contact** – Communication channels and location.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📱 Tech Stack
 
-**Edit a file directly in GitHub**
+- **Frontend**: HTML, CSS, JavaScript  
+- **Hosting**: Vercel  
+- **Optimized For**: Responsive design across mobile, tablet, and desktop devices.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📈 Goals
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Promote brand visibility online.  
+- Serve as a digital portfolio of completed works.  
+- Generate qualified leads through form submissions or direct inquiries.  
+- Establish a credible, professional brand identity in the architectural and interior design space.
 
-## What technologies are used for this project?
+---
 
-This project is built with .
+## 📩 Contact Information
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Phone/WhatsApp**: [https://wa.me/+2348136137737]  
+- **Email**: [mailto:francolee66@yahoo.com]  
+- **Location**: Lagos, Nigeria  
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/9c1f047b-b1da-49af-a329-039c50e21971) and click on Share -> Publish.
+## 🤝 Credits
 
-## I want to use a custom domain - is that possible?
+Designed, developed and maintained by Williams Martins [https://x.com/yeminimal]
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+---
+
+## 🚧 Future Improvements
+
+- Add client testimonials section.  
+- Integrate WhatsApp chat or inquiry form.  
+- Improve SEO and performance optimization.  
+- Enable blog or news section to share industry insights.
+
+---
+
+> "Elevating Spaces, One Design at a Time."
